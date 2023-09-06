@@ -1,10 +1,11 @@
-require_relative './student'
+require_relative 'student'
 
 class Classroom < Student
   attr_reader :student
   attr_accessor :label
 
   def initialize(label)
+    super()
     @label = label
     @students = []
   end

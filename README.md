@@ -40,7 +40,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[There are subclasses from the parent class]**
+- **There are subclasses from the parent class**
+- **Implement classes and objects in Ruby**
+- **Implement encapsulation and inheritance with Ruby**
+- **Set up associations between classes and objects.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -1,4 +1,4 @@
-require_relative 'app'
+require './app'
 
 class Main
   def initialize
@@ -19,23 +19,26 @@ class Main
       print "7 - Quit \n"
       init_app
     end
+  end
 
-    def init_app
-      @choice = gets.chomp.to_i
-      case @choice
-      when 1
-        @app.book_list
-      when 2
-        @app.people_list
-      when 3
-        @app.create_person
-      when 4
-        @app.create_book
-      when 5
-        @app.create_rental
-      when 6
-        @app.rental_list
-      end
+  def init_app
+    @choice = gets.chomp.to_i
+    case @choice
+    when 1
+      @app.book_list
+    when 2
+      @app.people_list
+    when 3
+      @app.create_person
+    when 4
+      @app.create_book
+    when 5
+      @app.create_rentals
+    when 6
+      @app.rental_list
     end
   end
 end
+
+main = Main.new
+main.options

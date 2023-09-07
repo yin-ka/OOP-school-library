@@ -38,6 +38,31 @@ class App
     end
   end
 
+  def create_book
+    print 'Book Title:'
+    title = gets.chomp
+    print 'Book Author:'
+    author = gets.chomp
+    new_book = Book.new(title, author)
+    @books << new_book
+    puts "#{new_book.title} created successfully"
+  end
+
+  def create_rental
+    print "Select a book from the following list by number \n"
+    book_list
+    book = gets.chomp.to_i
+    print "select a person \n"
+    people_list
+    person = gets.chomp.to_i
+    print 'select a date'
+    date = gets.chomp
+    people = [*@teachers, *@students]
+    new_rental = Rental.new(date, @books[book], people[person])
+    @rentals << new_rental
+    puts 'Rental created successfully'
+  end
+
   def create_person
     print "Choose whom you want to create\n (1)Student\n (2)Teacher"
     creator = gets.chomp.to_i

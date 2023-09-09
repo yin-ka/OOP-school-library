@@ -8,7 +8,7 @@ class Main
 
   def options
     print 'WELCOME TO THE SCHOOL LIBRARY APP'
-    while @choice != 6
+    while @choice != 7
       print "\nPlease choose an option by entering a number \n\n"
       print "1 - List all books \n"
       print "2 - List all people \n"

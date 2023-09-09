@@ -70,7 +70,7 @@ Clone this repository to your desired folder:
 
 <!-- AUTHORS -->
 
-👤 **Ekiugbo Blessing**
+👤 **Yusuf Sholotan**
 
 - GitHub: [@yin-ka](https://github.com/yin-ka)
 - LinkedIn: [Yusuf Sholotan](https://www.linkedin.com/in/yusuf-sholotan/)

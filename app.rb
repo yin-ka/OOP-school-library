@@ -21,7 +21,7 @@ class App
   end
 
   def book_list
-    print "\nSorry you can't find any books\n" if @books.empty?
+    print "\nSorry we don't have any book registered\n" if @books.empty?
     @books.each_with_index do |book, index|
       print "\n(#{index}) Title: \"#{book.title}\", Author: \"#{book.author}\"\n"
     end
@@ -32,16 +32,16 @@ class App
     people.each_with_index do |person, index|
       print "\n(#{index}) Name: \"#{person.name}\", Age: \"#{person.age}\", id: \"#{person.id}\"\n"
     end
-    print "\nSorry you can't find any person\n" if people.empty?
+    print "\nSorry we don't have anyone registered\n" if people.empty?
   end
 
   def rental_list
-    puts "Please enter person's id to see rentals"
-    people_list
-    print "\nSorry you can't find any rentals\n" if @rentals.empty?
-    id = gets.chomp.to_i
-    @rentals.each do |i|
-      print "\nDate: #{i.date}, Title: #{i.book.title}, Author: #{i.book.author}\n" if id == i.person.id
+    people = @people
+    unless people.empty?
+      puts "Please enter person's id to see rentals"
+      people_list
+    end
+    print "\nSorry we don't have any rentals registered\nPress enter" if @rentals.empty?
     end
   end
 end

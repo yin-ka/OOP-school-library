@@ -12,7 +12,7 @@ class Person < Nameable
     @name
   end
 
-  def initialize(age, name = 'unknown', parent_permission: true, id = Random.rand(1..1000))
+  def initialize(age, name = 'unknown', id = Random.rand(1..1000), parent_permission: true)
     super()
     @id = id
     @name = name

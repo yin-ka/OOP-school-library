@@ -11,7 +11,7 @@ class App
     @books = created_books_file ? JSON.parse(created_books_file.read, create_additions: true) : []
     created_people_file = create_new_json('people')
     @people = created_people_file ? JSON.parse(created_people_file.read, create_additions: true) : []
-    created_rent_file = create_new_json('rent')
+    created_rent_file = create_new_json('rentals')
     @rentals = created_rent_file ? JSON.parse(created_rent_file.read, create_additions: true) : []
   end
 

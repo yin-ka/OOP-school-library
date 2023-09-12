@@ -29,5 +29,9 @@ class CreateRental
   def update(new_rental)
     @rentals << new_rental
     puts 'Rental created successfully'
+    File.open('rentals.json', 'w+') do |file|
+      rentals = JSON.dump(@rentals)
+      file.write(rentals)
+    end
   end
 end

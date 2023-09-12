@@ -7,9 +7,17 @@ class App
   attr_accessor :books, :people, :rentals
 
   def initialize
-    @books = []
-    @people = []
-    @rentals = []
+    created_books_file = create_new_json('books')
+    @books = created_books_file ? JSON.parse(created_books_file.read, create_additions: true) : []
+    created_people_file = create_new_json('people')
+    @people = created_people_file ? JSON.parse(created_people_file.read, create_additions: true) : []
+    created_rent_file = create_new_json('rent')
+    @rentals = created_rent_file ? JSON.parse(created_rent_file.read, create_additions: true) : []
+  end
+
+  def create_new_json(file_name)
+    File.write("#{file_name}.json", []) unless File.exist?("#{file_name}.json")
+    File.open("#{file_name}.json", 'r')
   end
 
   def book_list

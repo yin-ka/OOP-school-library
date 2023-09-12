@@ -40,11 +40,12 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **There are subclasses from the parent class**
-- **Implement classes and objects in Ruby**
-- **Implement encapsulation and inheritance with Ruby**
+- **There are subclasses from the parent class.**
+- **Implement classes and objects in Ruby.**
+- **Implement encapsulation and inheritance with Ruby.**
 - **Set up associations between classes and objects.**
 - **Refactored the codes.**
+- **Preserved data.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,6 +76,12 @@ Clone this repository to your desired folder:
 
 - GitHub: [@yin-ka](https://github.com/yin-ka)
 - LinkedIn: [Yusuf Sholotan](https://www.linkedin.com/in/yusuf-sholotan/)
+
+👤 **Tajul Afreen**
+
+- GitHub: [Tajul Afreen](https://github.com/tajulafreen)
+- Twitter: [Tajul Afreen](https://www.twitter.com/tajulafreen)
+- LinkedIn: [Tajul Afreen](https://www.linkedin.com/in/tajul-afreen/)
 
 ## 🔭 Future Features <a name="future-features"></a>
 

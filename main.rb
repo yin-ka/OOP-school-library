@@ -18,7 +18,7 @@ def main
   loop do
     options
     num = gets.chomp.to_i
-    break if num == '7'
+    break if num == 7
 
     actions.user_input(app, num)
   end

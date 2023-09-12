@@ -76,6 +76,12 @@ Clone this repository to your desired folder:
 - GitHub: [@yin-ka](https://github.com/yin-ka)
 - LinkedIn: [Yusuf Sholotan](https://www.linkedin.com/in/yusuf-sholotan/)
 
+👤 **Tajul Afreen**
+
+- GitHub: [Tajul Afreen](https://github.com/tajulafreen)
+- Twitter: [Tajul Afreen](https://www.twitter.com/tajulafreen)
+- LinkedIn: [Tajul Afreen](https://www.linkedin.com/in/tajul-afreen/)
+
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Add more complex methods for building the library]**

@@ -12,7 +12,7 @@ class Book
   def add_rental(person, date)
     Rental.new(date, self, person)
   end
-  
+
   def make_json(*args)
     {
       JSON.create_id => self.class.name,

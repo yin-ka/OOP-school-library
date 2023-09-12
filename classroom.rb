@@ -1,4 +1,4 @@
-require_relative 'student'
+require './student'
 
 class Classroom < Student
   attr_reader :student

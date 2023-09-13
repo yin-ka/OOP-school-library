@@ -1,11 +1,11 @@
 require './student'
 
 class Classroom < Student
-  attr_reader :student
+  attr_reader :students
   attr_accessor :label
 
   def initialize(label)
-    super()
+    super(age, name, parent_permission)
     @label = label
     @students = []
   end

@@ -21,7 +21,6 @@ describe Book do
     end
   end
 end
-require 'spec_helper'
 
 describe Book do
   before :each do

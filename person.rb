@@ -30,7 +30,7 @@ class Person < Nameable
     Rental.new(date, book, self)
   end
 
-  private
+  # private
 
   def of_age?
     @age >= 18
@@ -61,3 +61,6 @@ class TrimmerDecorator < BaseDecorator
     @nameable.correct_name[0, 10]
   end
 end
+
+person = Person.new(14, 'Joe', false)
+p person.can_use_services?

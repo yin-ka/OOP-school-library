@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Rental do
   before :each do
-    @rental = Rental.new('6/29//2023', 4, 3)
+    @rental = Rental.new('9/13//2023', 4, 3)
   end
   it 'Should return a Rental object' do
     expect(@rental).to be_an_instance_of Rental

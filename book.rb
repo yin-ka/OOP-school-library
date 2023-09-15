@@ -10,7 +10,9 @@ class Book
   end
 
   def add_rental(person, date)
-    Rental.new(date, self, person)
+    rental = Rental.new(date, self, person)
+    @rentals << rental # Add the rental to the rentals array
+    rental # Return the created rental object if needed
   end
 
   def to_json(*args)

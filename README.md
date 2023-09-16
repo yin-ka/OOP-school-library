@@ -70,6 +70,16 @@ Clone this repository to your desired folder:
 
 -Command: install bundle
 
+
+### Usage
+```
+ruby main.rb
+```
+### Run tests
+```
+rspec spec
+```
+
 <!-- AUTHORS -->
 
 👤 **Yusuf Sholotan**
